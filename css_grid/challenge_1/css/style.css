@@ -1,0 +1,141 @@
+/*declaring grid*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 60px 220px 360px 272px;
+  border: 1px solid black; }
+
+/*declaring borders*/
+div > * {
+  border: 1px solid black;
+  padding: 5px; }
+
+/*nav bar*/
+.nav {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 100px; }
+
+#navb {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin-left: 80px; }
+
+a {
+  text-decoration-line: none;
+  border: 0; }
+
+/*second row - my profile*/
+.me {
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 100px;
+  border-bottom: 0; }
+
+#my_para {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 165px;
+  width: 600px;
+  overflow: hidden; }
+
+#my_img {
+  display: inline-block;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0;
+  height: 165px;
+  width: 310px; }
+
+/*third row - classmates*/
+.classmates {
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-left: 100px;
+  border-top: 0; }
+
+#classmate1 {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 300px;
+  height: 350px;
+  padding: 0; }
+
+#class {
+  width: 300px;
+  height: 350px;
+  padding: 0; }
+
+#classmate2 {
+  display: inline-block;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 300px;
+  height: 350px;
+  padding: 0; }
+
+#classmate3 {
+  display: inline-block;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 300px;
+  height: 350px;
+  padding: 0; }
+
+/*forth row - facilitator*/
+.facilitator {
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-left: 100px;
+  padding: 0; }
+
+#facilitator_pic {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  height: 273px;
+  padding: 0;
+  border: 0; }
+
+#facilitator_para {
+  display: inline-block;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 120px;
+  border: 0; }
+
+/*images properties*/
+img {
+  border: 0;
+  object-fit: fill;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

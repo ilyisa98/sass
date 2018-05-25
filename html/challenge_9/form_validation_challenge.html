@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Form Validation Challenge</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <fieldset>
+
+  <legend><h1>Registration Form</h1></legend>
+<div class="form">
+  <form action="somescript.php" method="post">
+
+    <div style="width: 250px; margin-left: -10px">
+      <p class="a"> <l>User Id:</l>
+        <input type="text" name="userid" value="" placeholder="User Id" minlenght="5" maxlength=" 12" title="Please enter a valid user id of 5 - 12 characters."required></p>
+    </div>
+
+    <div style="width: 250px; margin-left: -24px">
+        <p class="b"> <l>Password:</l>
+          <input type="password" name="password" value="" placeholder="Password"  pattern=".{7,12}" title="Please enter a password of 7 - 12 characters." minlenght="7" maxlength="12" required></input></p>
+    </div>
+
+    <div style="width: 250px; margin-left: -2px">
+          <p><l>Name:</l>
+            <input type="text" name="name" value="" placeholder="Name" pattern="[A-Za-z]{0,}"  title="Enter only alphabetical characters." required></p>
+    </div>
+
+    <div style="width: 250px; margin-left: -15px">
+          <p><l>Address:</l>
+            <input type="text" name="address" value="" placeholder="Address"</p>
+    </div>
+
+    <div style="width: 250px; margin-left: -15px">
+              <p><l>Country:</l>
+                <select name="country" value="" placeholder="Country" required>
+                  <option value="south_africa">South Africa</option>
+                  <option value="america">America</option>
+                  <option value="europe">Europe</option>
+                  <option value="australia">Australia</option></p>
+                </select>
+    </div>
+
+    <div style="width: 250px; margin-left: -26px">
+                <p><l>ZIP Code:</l>
+                  <input type="number" name="zip_code" value="" placeholder="ZIP Code" minlenght="4" maxlength="4" title="Please enter your 4 digit zip code."required></p>
+    </div>
+
+    <div style="width: 250px; margin-left: -3px">
+                <p><l>Email:</l>
+                    <input type="email" name="email" value="" placeholder="Email" title="Please enter a valid email address."required></p>
+    </div>
+
+    <div style="width: 250px; margin-left: 11px">
+                    <p><l>Sex:</l>
+                      <input type="radio" name="gender" checked required>Male
+                      <input type="radio" name="gender" required>Female</p>
+    </div>
+
+    <div style="width: 250px; margin-left: -26px">
+                      <p><l>Language:</l>
+                        <input type="checkbox" name="language" checked required>English
+                        <input type="checkbox" name="language" required>Non English</p>
+    </div>
+
+                      <!-- <div style="width: 275px; margin-left: -10px"> -->
+                      <p><label style="vertical-align:top">About:</label>
+                        <textarea rows="8" cols="22" maxlength="200"></textarea></p>
+                        <!-- </div> -->
+      <div style="width: 250px; margin-left: 50px">
+                   <button type="submit" title="Click to submt your information.">Submit</button>
+                          <!-- <input type="submit"> -->
+      </div>
+          </form>
+  </div>
+</fieldset>
+      </body>
+
+  </html>
